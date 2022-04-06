@@ -92,6 +92,10 @@ ul{
     margin-right: 12px;
     font-weight: bold;
 }
+.activeLink{
+    border-color: var(--white) !important;
+    
+}
 /* ------ */
 /* HOME */
 /* ------ */
