@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+/* ------ */
+/* VARIABLES */
+/* ------ */
+:root{
+    --bellefair: 'Bellefair', serif;
+    --barlow: 'Barlow', sans-serif;
+    --barlow-condensed:'Barlow Condensed', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --dark: #0c0e18;
+    --light: #d2d8f9;
+    --white:#ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ------ */
+/* GENERAL */
+/* ------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    font-size: 1.1rem;
+    font-family: var(--barlow);
+    background-color: var(--dark);
+    color: var(--white);
 }
-
-.App-link {
-  color: #61dafb;
+a{
+    text-decoration: none;
 }
+ul{
+    list-style: none;
+}
+/* ------ */
+/* NAVBAR */
+/* ------ */
+.navbarContainer{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    z-index: 100;
+}
+.navbarLeft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.logoContainer{
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.logoContainer:hover{
+    transform: scale(1.1);
+}
+.navbarLine{
+    height: 1px;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 0.2;
+    margin-left: 40px;
+}
+.navbarRight{
+    font-family: var(--barlow-condensed);
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    flex: 1;
+    padding: 0 60px;
+    /* background-color: rgba(255, 255, 255, 0.059); */
+    background-color: rgba(102, 102, 102, 0.171);
+    backdrop-filter: blur(16px) ;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.navbarRight li{
+    color: var(--white);
+    margin-right: 30px;
+    padding: 35px 0;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease;
+}
+.navbarRight li:hover{
+    border-color: var(--white);
+}
+.navbarLinkNumber{
+    margin-right: 12px;
+    font-weight: bold;
+}
+/* ------ */
+/* HOME */
+/* ------ */
+.homeContainer{
+    height: 100vh;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* DESTINATION */
+/* ------ */
+.destinationContainer{
+    height: 100vh;
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* CREW */
+/* ------ */
+.crewContainer{
+    height: 100vh;
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* TECHNOLOGY */
+/* ------ */
+.technologyContainer{
+    height: 100vh;
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* KEYFRAMES */
+/* ------ */
+@keyframes fadeIn {
+    from{
+        opacity:0
+    }
+    to{
+        opacity: 1;
+    }
 }
