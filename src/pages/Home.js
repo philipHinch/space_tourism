@@ -1,4 +1,11 @@
+//router
+import { useNavigate } from "react-router-dom";
+
+
 const Home = () => {
+
+    const navigate = useNavigate()
+
     return (
         <div className="homeContainer">
             <div className="homeMain">
@@ -10,8 +17,8 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="homeMainRight">
-                    <div className="outerCircle">
-                        <div className="innerCircle btnCircle">
+                    <div className="outerCircle" onClick={() => navigate('/destination')}>
+                        <div className="innerCircle btnCircle" >
                             <p className="circleText">explore</p>
                         </div>
                     </div>

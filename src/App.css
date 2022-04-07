@@ -86,7 +86,7 @@ ul{
     transition: border 0.2s ease;
 }
 .navbarRight li:hover{
-    border-color: var(--white);
+    border-color: rgb(126, 126, 126);
 }
 .navbarLinkNumber{
     margin-right: 12px;
@@ -97,8 +97,9 @@ ul{
     
 }
 /* ------ */
-/* HOME */
+/* PAGES */
 /* ------ */
+/* HOME */
 .homeContainer{
     display: flex;
     justify-content: center;
@@ -140,14 +141,12 @@ ul{
     color: var(--light);
     width: 80%;
     margin-left: 10px;
-
 }
 .homeMainRight{
     flex:1 ;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
 }
 .outerCircle{
     display: flex;
@@ -164,7 +163,6 @@ ul{
 }
 .outerCircle:hover{
     background-color: rgba(193, 190, 190, 0.171);
-
 }
 .innerCircle{
     display: flex;
@@ -182,10 +180,13 @@ ul{
     color: var(--dark);
     
 }
-/* ------ */
 /* DESTINATION */
-/* ------ */
 .destinationContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-image: url(./assets/destination/background-destination-desktop.jpg);
     background-position: center;
@@ -193,9 +194,7 @@ ul{
     background-size: cover;
     animation: fadeIn 0.2s ease;
 }
-/* ------ */
 /* CREW */
-/* ------ */
 .crewContainer{
     height: 100vh;
     background-image: url(./assets/crew/background-crew-desktop.jpg);
@@ -204,9 +203,7 @@ ul{
     background-size: cover;
     animation: fadeIn 0.2s ease;
 }
-/* ------ */
 /* TECHNOLOGY */
-/* ------ */
 .technologyContainer{
     height: 100vh;
     background-image: url(./assets/technology/background-technology-desktop.jpg);
@@ -214,6 +211,136 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* COMPONENTS */
+/* ------ */
+/* ------ */
+/* PAGE TITLE */
+/* ------ */
+.pageTitleContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: var(--barlow-condensed);
+    letter-spacing: 4.7px;
+}
+.pageTitleContainer .pageNumber{
+    font-weight: bold;
+    margin-right: 30px;
+    opacity: 0.5;
+}
+/* ------ */
+/* DESTINATION COMPONENT */
+/* ------ */
+.destinationComponentContainer{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    /* border: 1px solid salmon; */
+    width: 80%;
+    max-width: 1920px;
+    padding: 100px 0;
+}
+.destinationComponentContainerLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.destinationComponentContainerLeft img{
+    width: 100%;
+    max-width: 500px;
+}
+.destinationComponentContainerRight{
+flex: 1;
+display: flex;
+/* justify-content: center; */
+/* align-items: flex-start; */
+align-items: center;
+text-align: left;
+flex-direction: column;
+
+
+}
+.innerRightDestinationComponent{
+    /* background-color: royalblue; */
+    margin-left: 40px;
+    padding: 20px;
+}
+.destinationTitle{
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-size: 7rem;
+    margin: 40px 0;
+}
+.destinationText{
+    color: var(--light);
+    line-height: 30px;
+    /* font-size: 1.1rem; */
+    letter-spacing: 1px;
+}
+.destinationLine{
+    height: 2px;
+    width: 100%;
+    margin: 40px 0;
+    opacity: 0.1;
+    background-color: var(--white);
+}
+.destinationInfoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.destinationDistanceContainer{
+    flex:1;
+}
+.destinationTravelTimeContainer{
+    flex: 1;
+}
+.destinationDistanceText, .destinationTravelTimeText{
+    color: var(--light);
+    text-transform: uppercase;
+    font-family: var(--barlow-condensed);
+    letter-spacing: 2.7px;
+    margin-bottom: 20px;
+}
+.destinationDistanceNumber,.destinationTravelTimeNumber{
+    font-family: var(--bellefair);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+/* ------ */
+/* DESTINATION SELECT */
+/* ------ */
+.destinationSelectContainer{
+    display: flex;
+}
+.destinationSelectContainer .destination{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: var(--barlow-condensed);
+    letter-spacing: 2.7px;
+    margin-right: 25px;
+    color: var(--light);
+    cursor: pointer;
+    padding-bottom: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.destinationSelectContainer .destination:hover{
+    border-color:var(--white) ;
+    color: var(--white);
+}
+.activeDestination{
+    color: var(--white) !important;
+    border-color:var(--white) !important;
 }
 /* ------ */
 /* KEYFRAMES */

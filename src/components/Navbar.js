@@ -7,7 +7,7 @@ import logo from '../assets/shared/logo.svg';
 const Navbar = () => {
 
     const navigate = useNavigate()
-    //i used this location path to toogle between navbar link active class
+    // used this location path to toogle between navbar link active class
     const location = useLocation()
 
     return (
