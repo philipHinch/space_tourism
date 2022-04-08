@@ -141,6 +141,8 @@ ul{
     color: var(--light);
     width: 80%;
     margin-left: 10px;
+    line-height: 30px;
+
 }
 .homeMainRight{
     flex:1 ;
@@ -252,7 +254,8 @@ ul{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    animation: fadeIn 0.2s ease;
+
 }
 .destinationComponentContainerLeft img{
     width: 100%;
@@ -266,37 +269,45 @@ display: flex;
 align-items: center;
 text-align: left;
 flex-direction: column;
-
-
 }
 .innerRightDestinationComponent{
     /* background-color: royalblue; */
     margin-left: 40px;
     padding: 20px;
+    min-height: 600px;
 }
 .destinationTitle{
     font-family: var(--bellefair);
     font-weight: 400;
     font-size: 7rem;
+    text-transform: uppercase;
     margin: 40px 0;
+    animation: fadeIn 0.2s ease;
+
 }
 .destinationText{
     color: var(--light);
     line-height: 30px;
     /* font-size: 1.1rem; */
     letter-spacing: 1px;
+    animation: fadeIn 0.2s ease;
+
 }
 .destinationLine{
-    height: 2px;
+    height: 1px;
     width: 100%;
     margin: 40px 0;
-    opacity: 0.1;
-    background-color: var(--white);
+    background-color: #ffffff33  ;
+    /* opacity: 0.1; */
+    animation: fadeIn 0.2s ease;
+
 }
 .destinationInfoContainer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    animation: fadeIn 0.2s ease;
+
 }
 .destinationDistanceContainer{
     flex:1;
