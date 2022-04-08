@@ -8,3 +8,12 @@ This is a frontend mentor challenge in which the goal is to build out a multi-pa
 - react hooks
 - react router
 - css animations
+
+Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/space-tourism-multipage-website-5fdJLy3dt) challange.
+
+![home preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png)
+
+---
+
+![destination preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/destination-desktop-preview.png)
+
