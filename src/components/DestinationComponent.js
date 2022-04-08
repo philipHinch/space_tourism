@@ -11,7 +11,6 @@ const DestinationComponent = ({ image, title, text, distance, time, setActive, m
         <div className="destinationComponentContainer">
             <PageTitle number={'01'} text={'pick your destination'} />
             <div className="destinationComponentContainerLeft">
-                {/* temporary image */}
                 <img src={image} alt="moon" />
             </div>
             <div className="destinationComponentContainerRight">

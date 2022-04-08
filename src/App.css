@@ -97,9 +97,8 @@ ul{
     
 }
 /* ------ */
-/* PAGES */
-/* ------ */
 /* HOME */
+/* ------ */
 .homeContainer{
     display: flex;
     justify-content: center;
@@ -182,7 +181,9 @@ ul{
     color: var(--dark);
     
 }
+/* ------ */
 /* DESTINATION */
+/* ------ */
 .destinationContainer{
     position: relative;
     display: flex;
@@ -196,49 +197,7 @@ ul{
     background-size: cover;
     animation: fadeIn 0.2s ease;
 }
-/* CREW */
-.crewContainer{
-    height: 100vh;
-    background-image: url(./assets/crew/background-crew-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fadeIn 0.2s ease;
-}
-/* TECHNOLOGY */
-.technologyContainer{
-    height: 100vh;
-    background-image: url(./assets/technology/background-technology-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fadeIn 0.2s ease;
-}
-/* ------ */
-/* COMPONENTS */
-/* ------ */
-/* ------ */
-/* PAGE TITLE */
-/* ------ */
-.pageTitleContainer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-start;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-family: var(--barlow-condensed);
-    letter-spacing: 4.7px;
-}
-.pageTitleContainer .pageNumber{
-    font-weight: bold;
-    margin-right: 30px;
-    opacity: 0.5;
-}
-/* ------ */
 /* DESTINATION COMPONENT */
-/* ------ */
 .destinationComponentContainer{
     position: relative;
     display: flex;
@@ -260,6 +219,8 @@ ul{
 .destinationComponentContainerLeft img{
     width: 100%;
     max-width: 500px;
+    animation: fadeIn 1.5s ease;
+
 }
 .destinationComponentContainerRight{
 flex: 1;
@@ -283,7 +244,6 @@ flex-direction: column;
     text-transform: uppercase;
     margin: 40px 0;
     animation: fadeIn 0.2s ease;
-
 }
 .destinationText{
     color: var(--light);
@@ -291,6 +251,8 @@ flex-direction: column;
     /* font-size: 1.1rem; */
     letter-spacing: 1px;
     animation: fadeIn 0.2s ease;
+    max-width: 80%;
+
 
 }
 .destinationLine{
@@ -300,6 +262,8 @@ flex-direction: column;
     background-color: #ffffff33  ;
     /* opacity: 0.1; */
     animation: fadeIn 0.2s ease;
+    max-width: 80%;
+
 
 }
 .destinationInfoContainer{
@@ -327,9 +291,7 @@ flex-direction: column;
     text-transform: uppercase;
     font-size: 2rem;
 }
-/* ------ */
 /* DESTINATION SELECT */
-/* ------ */
 .destinationSelectContainer{
     display: flex;
 }
@@ -353,6 +315,130 @@ flex-direction: column;
     color: var(--white) !important;
     border-color:var(--white) !important;
 }
+/* ------ */
+/* CREW */
+/* ------ */
+.crewContainer{
+    height: 100vh;
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+/* ------ */
+/* TECHNOLOGY */
+/* ------ */
+.technologyContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.2s ease;
+}
+.technologyComponentContainer{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    /* border: 1px solid salmon; */
+    width: 90%;
+    max-width: 1920px;
+    padding: 120px 0;
+    min-height: 800px;
+}
+.technologyComponentLeft{
+    flex: 1;
+    margin-right: 50px;
+}
+.innerTechnologyComponentLeft{
+    width: 80%;
+    /* max-width: 500px; */
+    margin-left: 20%;
+}
+.technologySubTitle{
+    font-size: 1.2rem;
+    font-family: var(--barlow-condensed);
+    letter-spacing: 4.7px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--light);
+}
+.threeDots{
+    letter-spacing: 1.7px;
+}
+.technologyTitle{
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 40px 0;
+    animation: fadeIn 0.2s ease;
+}
+.technologyText{
+    max-width: 500px;
+    color: var(--light);
+    line-height: 30px;
+    letter-spacing: 1px;
+    animation: fadeIn 0.2s ease;
+
+}
+.technologyComponentRight{
+    flex: 1;
+    max-width: 600px;
+}
+.technologyComponentRight img{
+    width: 100%;
+}
+/* TECHNOLOGY SELECT */
+.technologySelectContainer{
+}
+.selectCircle{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #ffffff33;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--bellefair);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+.selectCircle:hover{
+    border-color: var(--white);
+}
+.activeCircle{
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--white);
+}
+/* PAGE TITLE */
+.pageTitleContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: var(--barlow-condensed);
+    letter-spacing: 4.7px;
+}
+.pageTitleContainer .pageNumber{
+    font-weight: bold;
+    margin-right: 30px;
+    opacity: 0.5;
+}
+
 /* ------ */
 /* KEYFRAMES */
 /* ------ */

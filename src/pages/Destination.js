@@ -41,7 +41,6 @@ const Destination = () => {
         }
     }
 
-
     return (
         <div className="destinationContainer">
             {moonActive && <DestinationComponent image={moon} title={destinations[0].name} text={destinations[0].description} distance={destinations[0].distance} time={destinations[0].travel} setActive={setActive} moonActive={moonActive} />}
