@@ -4,7 +4,7 @@ import DestinationComponent from "../components/DestinationComponent";
 //hooks
 import { useState } from "react";
 //data
-import Data from '../data.json';
+import Data from '../data.js';
 //images
 import moon from '../assets/destination/image-moon.png';
 import mars from '../assets/destination/image-mars.png';
@@ -19,7 +19,10 @@ const Destination = () => {
     const [europaActive, setEuropaActive] = useState(false)
     const [titanActive, setTitanActive] = useState(false)
 
+
     const { destinations } = Data
+
+    console.log(destinations);
 
     const resetActive = () => {
         setMoonActive(false)
@@ -43,6 +46,15 @@ const Destination = () => {
 
     return (
         <div className="destinationContainer">
+
+            {/* trying to map and import local image through path to json file */}
+
+            {/* {destinations.map(destination => (
+                <DestinationComponent key={destination.name} image={destination.images.png} title={destination.name} text={destination.description} distance={destination.distance} time={destination.travel} setActive={setActive} />
+            ))} */}
+
+
+
             {moonActive && <DestinationComponent image={moon} title={destinations[0].name} text={destinations[0].description} distance={destinations[0].distance} time={destinations[0].travel} setActive={setActive} moonActive={moonActive} />}
             {marsActive && <DestinationComponent image={mars} title={destinations[1].name} text={destinations[1].description} distance={destinations[1].distance} time={destinations[1].travel} setActive={setActive} marsActive={marsActive} />}
             {europaActive && <DestinationComponent image={europa} title={destinations[2].name} text={destinations[2].description} distance={destinations[2].distance} time={destinations[2].travel} setActive={setActive} europaActive={europaActive} />}

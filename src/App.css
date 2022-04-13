@@ -207,6 +207,7 @@ ul{
     width: 80%;
     max-width: 1920px;
     padding: 100px 0;
+    
 }
 .destinationComponentContainerLeft{
     flex: 1;
@@ -218,7 +219,7 @@ ul{
 }
 .destinationComponentContainerLeft img{
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     animation: fadeIn 1.5s ease;
 
 }
@@ -252,8 +253,6 @@ flex-direction: column;
     letter-spacing: 1px;
     animation: fadeIn 0.2s ease;
     max-width: 80%;
-
-
 }
 .destinationLine{
     height: 1px;
@@ -308,8 +307,7 @@ flex-direction: column;
     transition: all 0.2s ease;
 }
 .destinationSelectContainer .destination:hover{
-    border-color:var(--white) ;
-    color: var(--white);
+    border-color:rgb(126, 126, 126) ;
 }
 .activeDestination{
     color: var(--white) !important;
@@ -319,12 +317,88 @@ flex-direction: column;
 /* CREW */
 /* ------ */
 .crewContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-image: url(./assets/crew/background-crew-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s ease;
+}
+/* CREW COMPONENT */
+.crewComponentContainer{
+    /* border: 1px solid salmon; */
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    /* border: 1px solid salmon; */
+    width: 80%;
+    height: 100%;
+    max-width: 1920px;
+    padding: 100px 0;
+    padding-bottom: 0;
+    margin-top: 300px;
+}
+.crewComponentContainerRight{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: fadeIn 0.2s ease;
+
+}
+.crewComponentContainerRight img{
+    width: 100%;
+    min-width: 660px;
+    max-width: 700px;
+    /* max-width: 500px; */
+    animation: fadeIn 1.5s ease;
+
+}
+.crewComponentContainerLeft{
+flex: 1;
+display: flex;
+/* justify-content: center; */
+/* align-items: flex-start; */
+align-items: center;
+text-align: left;
+flex-direction: column;
+}
+.innerLeftCrewComponent{
+    /* background-color: royalblue; */
+    margin-left: 0px;
+    padding: 20px;
+    padding-left: 0;
+    min-height: 600px;
+}
+.crewSubTitle{
+    font-size:2rem;
+    font-family: var(--bellefair);
+    /* letter-spacing: 4.7px; */
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #999;
+}
+.crewTitle{
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 40px 0;
+    animation: fadeIn 0.2s ease;
+}
+.crewText{
+    color: var(--light);
+    line-height: 30px;
+    /* font-size: 1.1rem; */
+    letter-spacing: 1px;
+    animation: fadeIn 0.2s ease;
+    max-width: 80%;
 }
 /* ------ */
 /* TECHNOLOGY */

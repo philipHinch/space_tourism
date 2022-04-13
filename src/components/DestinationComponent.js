@@ -5,16 +5,15 @@ import PageTitle from './PageTitle';
 
 const DestinationComponent = ({ image, title, text, distance, time, setActive, moonActive, marsActive, europaActive, titanActive }) => {
 
-
-
     return (
         <div className="destinationComponentContainer">
             <PageTitle number={'01'} text={'pick your destination'} />
             <div className="destinationComponentContainerLeft">
-                <img src={image} alt="moon" />
+                {/* <img src={image} alt={`${ title } image`} /> */}
+                <img src={`${ image }`} alt={`${ title } image`} />
             </div>
-            <div className="destinationComponentContainerRight">
 
+            <div className="destinationComponentContainerRight">
                 <div className="innerRightDestinationComponent">
                     <DestinationSelect setActive={setActive} moonActive={moonActive} marsActive={marsActive} europaActive={europaActive} titanActive={titanActive} />
                     <h1 className="destinationTitle">{title}</h1>
