@@ -1,11 +1,15 @@
 //components
-import CrewComponent from "../components/CrewComponents";
+import React, { useRef, useState } from "react";
+import Swiper from "../components/Swiper";
 
 
 const Crew = () => {
     return (
         <div className="crewContainer">
-            <CrewComponent />
+
+            <Swiper />
+
+            {/* <CrewComponent /> */}
         </div>
     );
 }

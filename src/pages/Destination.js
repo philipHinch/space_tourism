@@ -22,7 +22,7 @@ const Destination = () => {
 
     const { destinations } = Data
 
-    console.log(destinations);
+    // console.log(destinations);
 
     const resetActive = () => {
         setMoonActive(false)
