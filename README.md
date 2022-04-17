@@ -2,7 +2,7 @@
 
 This is a frontend mentor challenge in which the goal is to build out a multi-page space tourism website and get it looking as close to the original design as possible.
 
-In the **destination**,**crew** and **technology** pages I used map (a high order function) and the index from the map method in order to compare it to the active state to show content conditionally by added an active class.
+In the **destination**, **crew** and **technology** pages I used map (a high order javascript function) and the index from the map method in order to compare it to the active state to show content conditionally by added an active class.
 
 ![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
