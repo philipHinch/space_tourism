@@ -1,8 +1,5 @@
-//images
-import douglas from '../assets/crew/image-douglas-hurley.png';
 //components
 import PageTitle from './PageTitle';
-
 
 const CrewComponent = ({ name, bio, role, image }) => {
     return (
@@ -17,7 +14,7 @@ const CrewComponent = ({ name, bio, role, image }) => {
             </div>
 
             <div className="crewComponentContainerRight">
-                <img src={image} alt="moon" />
+                <img src={image} alt={`${ name } image`} />
             </div>
         </div>
     );

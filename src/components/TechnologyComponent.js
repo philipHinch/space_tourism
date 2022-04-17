@@ -2,11 +2,11 @@
 import TechnologySelect from "./TechnologySelect";
 import PageTitle from "./PageTitle";
 
-const TechnologyComponent = ({ title, text, image, setActive, launchVehicleActive, spacePortActive, spaceCapsuleActive }) => {
+const TechnologyComponent = ({ title, text, image, setActiveTech, launchVehicleActive, spacePortActive, spaceCapsuleActive, activeIndex, setActiveIndex, index }) => {
     return (
-        <div className="technologyComponentContainer">
+        <div className={`technologyComponentContainer ${ activeIndex === index ? 'active' : '' }`}>
             <PageTitle number={'03'} text={'space launch 101'} />
-            <TechnologySelect setActive={setActive} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} />
+            <TechnologySelect setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} setActiveIndex={setActiveIndex} />
             <div className="technologyComponentLeft">
                 <div className="innerTechnologyComponentLeft">
                     <h2 className="technologySubTitle">the terminology<span className="threeDots">...</span> </h2>

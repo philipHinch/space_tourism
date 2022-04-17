@@ -1,7 +1,8 @@
-const TechnologySelect = ({ setActive, launchVehicleActive, spacePortActive, spaceCapsuleActive }) => {
+const TechnologySelect = ({ setActiveTech, launchVehicleActive, spacePortActive, spaceCapsuleActive, setActiveIndex }) => {
 
     const handleClick = (e) => {
-        setActive(e)
+        setActiveTech(e)
+        setActiveIndex(parseInt(e.target.textContent) - 1)
     }
 
     return (
