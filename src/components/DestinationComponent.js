@@ -3,10 +3,10 @@ import DestinationSelect from './DestinationSelect';
 import PageTitle from './PageTitle';
 
 
-const DestinationComponent = ({ image, title, text, distance, time, setActive, moonActive, marsActive, europaActive, titanActive }) => {
+const DestinationComponent = ({ image, title, text, distance, time, setActiveDestination, moonActive, marsActive, europaActive, titanActive, index, activeIndex, setActiveIndex }) => {
 
     return (
-        <div className="destinationComponentContainer">
+        <div id={index} className={`destinationComponentContainer ${ activeIndex === index ? 'active' : '' }`}>
             <PageTitle number={'01'} text={'pick your destination'} />
             <div className="destinationComponentContainerLeft">
                 {/* <img src={image} alt={`${ title } image`} /> */}
@@ -15,7 +15,7 @@ const DestinationComponent = ({ image, title, text, distance, time, setActive, m
 
             <div className="destinationComponentContainerRight">
                 <div className="innerRightDestinationComponent">
-                    <DestinationSelect setActive={setActive} moonActive={moonActive} marsActive={marsActive} europaActive={europaActive} titanActive={titanActive} />
+                    <DestinationSelect setActiveIndex={setActiveIndex} index={index} setActiveDestination={setActiveDestination} moonActive={moonActive} marsActive={marsActive} europaActive={europaActive} titanActive={titanActive} />
                     <h1 className="destinationTitle">{title}</h1>
                     <p className="destinationText">{text}</p>
                     <div className="destinationLine"></div>

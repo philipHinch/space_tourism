@@ -1,15 +1,16 @@
-const DestinationSelect = ({ setActive, moonActive, marsActive, europaActive, titanActive }) => {
+const DestinationSelect = ({ setActiveIndex, setActiveDestination, moonActive, marsActive, europaActive, titanActive }) => {
 
     const handleClick = (e) => {
-        setActive(e)
+        setActiveDestination(e)
+        setActiveIndex(parseInt(e.target.id))
     }
 
     return (
         <ul className="destinationSelectContainer">
-            <li className={`destination ${ moonActive && 'activeDestination' }`} onClick={handleClick}>moon</li>
-            <li className={`destination ${ marsActive && 'activeDestination' }`} onClick={handleClick}>mars</li>
-            <li className={`destination ${ europaActive && 'activeDestination' }`} onClick={handleClick}>europa</li>
-            <li className={`destination ${ titanActive && 'activeDestination' }`} onClick={handleClick}>titan</li>
+            <li id='0' className={`destination ${ moonActive && 'activeDestination' }`} onClick={handleClick}>moon</li>
+            <li id='1' className={`destination ${ marsActive && 'activeDestination' }`} onClick={handleClick}>mars</li>
+            <li id='2' className={`destination ${ europaActive && 'activeDestination' }`} onClick={handleClick}>europa</li>
+            <li id='3' className={`destination ${ titanActive && 'activeDestination' }`} onClick={handleClick}>titan</li>
         </ul>
     );
 }

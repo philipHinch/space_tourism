@@ -207,7 +207,10 @@ ul{
     width: 80%;
     max-width: 1920px;
     padding: 100px 0;
-    
+display: none;    
+}
+.active{
+    display: flex;
 }
 .destinationComponentContainerLeft{
     flex: 1;
@@ -221,6 +224,7 @@ ul{
     width: 100%;
     max-width: 550px;
     animation: fadeIn 1.5s ease;
+    
 
 }
 .destinationComponentContainerRight{
