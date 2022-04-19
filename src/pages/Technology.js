@@ -7,12 +7,12 @@ import Data from '../data.js';
 
 const Technology = () => {
 
+    const { technology } = Data
+
     const [launchVehicleActive, setLaunchVehicleActive] = useState(true)
     const [spacePortActive, setSpacePortActive] = useState(false)
     const [spaceCapsuleActive, setSpaceCapsuleActive] = useState(false)
     const [activeIndex, setActiveIndex] = useState(0)
-
-    const { technology } = Data
 
     const resetActive = () => {
         setLaunchVehicleActive(false)
@@ -33,9 +33,13 @@ const Technology = () => {
 
     return (
         <div className="technologyContainer">
-            {technology && technology.map((tech, i) => (
-                <TechnologyComponent key={tech.name} title={tech.name} text={tech.description} image={tech.images.webp} setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} activeIndex={activeIndex} setActiveIndex={setActiveIndex} index={i} />
-            ))}
+            {technology && technology.map((tech, i) => {
+                if (window.innerWidth < 900) {
+                    return <TechnologyComponent key={tech.name} title={tech.name} text={tech.description} image={tech.images.landscape} setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} activeIndex={activeIndex} setActiveIndex={setActiveIndex} index={i} />
+                } else {
+                    return <TechnologyComponent key={tech.name} title={tech.name} text={tech.description} image={tech.images.webp} setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} activeIndex={activeIndex} setActiveIndex={setActiveIndex} index={i} />
+                }
+            })}
         </div>
     );
 }
