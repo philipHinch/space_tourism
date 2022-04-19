@@ -4,7 +4,7 @@ import PageTitle from './PageTitle';
 const CrewComponent = ({ name, bio, role, image }) => {
     return (
         <div className="crewComponentContainer">
-            <PageTitle number={'02'} text={'meet your crew'} />
+            <PageTitle number={'02'} text={'meet your crew'} crewPageTitle={'crewPageTitle'} />
             <div className="crewComponentContainerLeft">
                 <div className="innerLeftCrewComponent">
                     <h2 className="crewSubTitle">{role}</h2>

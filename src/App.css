@@ -113,6 +113,7 @@ ul{
 .homeMain{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 150px;
     width: 80%;
     max-width: 1920px;
@@ -214,12 +215,14 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    min-width: 300px;
     animation: fadeIn 0.2s ease;
 
 }
 .destinationComponentContainerLeft img{
     width: 100%;
     max-width: 550px;
+    min-width: 300px;
     animation: fadeIn 1.5s ease;
     
 
@@ -365,7 +368,6 @@ flex-direction: column;
     max-width: 700px;
     /* max-width: 500px; */
     animation: fadeIn 1.5s ease;
-
 }
 .crewComponentContainerLeft{
 flex: 1;
@@ -527,15 +529,11 @@ flex-direction: column;
 /* ------ */
 .swiper {
     width: 100%;
-    height: 100%;
-    
-  }
-  
-  .swiper-slide {
+    height: 100%;    
+}
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    
-  
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -549,32 +547,26 @@ flex-direction: column;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  
-  .swiper-slide img {
+}  
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .swiper-pagination{
+}
+.swiper-pagination{
     width: 50% !important;
-  margin-bottom: 50px;
-      /* text-align: left !important; */
-
-
-      
-
-  }
-  .swiper-pagination-bullet{
-      height: 18px !important;
-      width: 18px !important;
+    margin-bottom: 50px;
+  /* text-align: left !important; */
+}
+.swiper-pagination-bullet{
+    height: 18px !important;
+    width: 18px !important;
     background-color: white !important;
     margin-right: 18px !important;
-
-  }
-  /* ACTIVE CLASS */
-  .active{
+}
+/* ACTIVE CLASS */
+.active{
     display: flex;
 }
 /* ------ */
@@ -587,4 +579,120 @@ flex-direction: column;
     to{
         opacity: 1;
     }
+}
+/* ------ */
+/* MEDIA QUERIES */
+/* ------ */
+@media (max-width:1100px){
+/* home */
+.homeMain{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin-top: 0;
+}
+.homeMainLeft h2{
+   
+    margin-left: 0px;
+}
+.homeMainLeft p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.homeMainLeft{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.homeMainRight{
+    align-items: center;
+}
+/* crew */
+.crewComponentContainer{
+    flex-direction: column;
+    margin-top: 0px;
+    /* margin-top: 100px; */
+height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* height: 100%; */
+    padding: 0;
+}
+.crewComponentContainerRight{
+    padding-top: 70px;
+}
+.crewComponentContainerRight img{
+    min-width: 250px;
+}
+.crewComponentContainerLeft{
+    text-align: center;
+}
+.innerLeftCrewComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.crewTitle{
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.crewText{
+    margin: 0 auto;
+    width: 70%;
+}
+/* page title */
+.crewPageTitle{
+    top: 150px;
+    /* left: 40px; */
+}
+/* swiper */
+.swiper-pagination{
+    display: block !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    bottom: 47% !important;
+}
+.swiper-pagination-bullet{
+    height: 12px !important;
+    width: 12px !important;
+    margin-right: 18px !important;
+}
+}
+@media (max-width:900px){
+/* page title */
+.pageTitleContainer{
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+/* destination select */
+.destinationSelectContainer{
+    justify-content: center;
+    margin-top: 25px ;
+    margin-bottom: 50px;
+}
+/* destination */
+.destinationComponentContainer{
+    flex-direction: column;
+}
+
+.destinationComponentContainerLeft img{
+    max-width: 300px;
+}
+.destinationComponentContainerRight{
+    text-align: center;
+}
+.innerRightDestinationComponent{
+    margin: 0;
+}
+.destinationText,.destinationLine{
+    max-width: 100%;
+}
 }

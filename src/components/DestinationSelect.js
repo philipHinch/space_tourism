@@ -1,8 +1,8 @@
 const DestinationSelect = ({ setActiveIndex, setActiveDestination, moonActive, marsActive, europaActive, titanActive }) => {
 
     const handleClick = (e) => {
-        setActiveDestination(e)
         setActiveIndex(parseInt(e.target.id))
+        setActiveDestination(e)
     }
 
     return (
