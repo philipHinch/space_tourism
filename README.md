@@ -10,10 +10,10 @@ In the **destination**, **crew** and **technology** pages I used map (a high ord
 
 ## Technologies used:
 
-- react
-- react hooks
-- react router
-- css animations
+- React
+- React hooks
+- React router V6
+- CSS Animations
 
 Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/space-tourism-multipage-website-5fdJLy3dt) challange.
 
