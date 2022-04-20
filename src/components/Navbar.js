@@ -3,12 +3,17 @@ import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 //images
 import logo from '../assets/shared/logo.svg';
+import hamburger from '../assets/shared/icon-hamburger.svg';
 
-const Navbar = () => {
+const Navbar = ({ setShowMenu }) => {
 
     const navigate = useNavigate()
     // used this location path to toogle between navbar link active class
     const location = useLocation()
+
+    const handleClick = () => {
+        setShowMenu(true)
+    }
 
     return (
         <div className="navbarContainer">
@@ -17,6 +22,9 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className="logo" />
                 </div>
                 <div className="navbarLine"></div>
+            </div>
+            <div className="hamburgerContainer" onClick={handleClick}>
+                <img src={hamburger} alt="hamburger" />
             </div>
             <ul className="navbarRight">
                 <Link to='/'><li className={`navbarItem ${ location.pathname === '/' ? 'activeLink' : '' }`}><span className="navbarLinkNumber">00</span>home</li>

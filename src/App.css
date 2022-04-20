@@ -35,6 +35,9 @@ ul{
 /* ------ */
 /* NAVBAR */
 /* ------ */
+.hamburgerContainer{
+    display: none;
+}
 .navbarContainer{
     position: fixed;
     width: 100%;
@@ -585,6 +588,14 @@ flex-direction: column;
         opacity: 1;
     }
 }
+@keyframes slideIn {
+    from{
+        transform:translateX(3000)
+    }
+    to{
+        transform:translateX(0)
+    }
+}
 /* ------ */
 /* MEDIA QUERIES */
 /* ------ */
@@ -594,6 +605,7 @@ flex-direction: column;
     position: fixed;
     height: 100%;
     width: 100%;
+    background-image: url(./assets/home/background-home-tablet.jpg);
 }
 .homeMain{
     flex-direction: column;
@@ -621,6 +633,9 @@ flex-direction: column;
     align-items: center;
 }
 /* crew */
+.crewContainer{
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+}
 .crewComponentContainer{
     flex-direction: column;
     display: block;
@@ -684,9 +699,10 @@ flex-direction: column;
     margin-bottom: 50px;
 }
     /* destination */
-    .destinationContainer{
-        height: 100%;
-    }
+.destinationContainer{
+    height: 100%;
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+}
 .destinationComponentContainer{
     flex-direction: column;
     height: 100vh;
@@ -707,6 +723,7 @@ flex-direction: column;
     /* technology */
 .technologyContainer{
     height: 100%;
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
 }
 .technologyComponentContainer{
     flex-direction: column;
@@ -748,5 +765,74 @@ flex-direction: column;
 .selectCircle{
     margin-right: 20px;
 }
-
+}
+@media (max-width:768px){
+    /* navbar */
+    .navbarRight{
+        display: none;
+    }
+    .navbarLine{
+        display: none;
+    }
+    .hamburgerContainer{
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        height: 33px;
+        width: 33px;
+    }
+    .hamburgerContainer:hover{
+        /* transform: scale(1.1); */
+        opacity: 0.8;
+    }
+    .hamburgerContainer img{
+        width: 100%;
+    }
+    .slidingMenuContainer{
+        position: fixed;
+        height: 100vh;
+        width: 70%;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        background-color: rgba(102, 102, 102, 0.171);
+        backdrop-filter: blur(18px);
+        transform: translateX(3000px);
+        transition: transform 0.2s ease;
+    }
+    .activeSlidingMenu{
+        transform: translateX(0);
+    }
+    .closeIconContainer{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        height: 33px;
+        width: 33px;
+    }
+    .closeIconContainer img{
+        width: 100%;
+    }
+    .slidingMenu{
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-left: 50px;
+        letter-spacing: 2.7px;
+        font-family: var(--barlow-condensed);
+        /* background-color: rgba(32, 32, 32, 0.061);
+        backdrop-filter: blur(2px) ; */
+        height: 100%;
+    }
+    .slidingMenu li{
+        color: var(--white);
+        padding: 25px 0;
+        text-transform: uppercase;
+        font-size:1.6rem;
+    }
+    .slidingMenuNumber{
+        margin-right: 12px;
+        font-weight: bold;
+    }
 }

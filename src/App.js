@@ -8,13 +8,20 @@ import Technology from './pages/Technology';
 //components
 //router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//components
 import Navbar from './components/Navbar';
+import SlidingMenu from './components/SlidingMenu';
+import { useState } from 'react';
 
 function App() {
+
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar setShowMenu={setShowMenu} />
+        <SlidingMenu showMenu={showMenu} setShowMenu={setShowMenu} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/destination' element={<Destination />} />
