@@ -5,7 +5,7 @@ import PageTitle from "./PageTitle";
 const TechnologyComponent = ({ title, text, image, setActiveTech, launchVehicleActive, spacePortActive, spaceCapsuleActive, activeIndex, setActiveIndex, index }) => {
     return (
         <div className={`technologyComponentContainer ${ activeIndex === index ? 'active' : '' }`}>
-            <PageTitle number={'03'} text={'space launch 101'} techPageTitle={'techPageTitle'} />
+            {/* <PageTitle number={'03'} text={'space launch 101'} techPageTitle={'techPageTitle'} /> */}
             <TechnologySelect setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} setActiveIndex={setActiveIndex} />
             <div className="technologyComponentLeft">
                 <div className="innerTechnologyComponentLeft">

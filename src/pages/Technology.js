@@ -1,5 +1,6 @@
 //components
 import TechnologyComponent from "../components/TechnologyComponent";
+import PageTitle from "../components/PageTitle";
 //hooks
 import { useState } from "react";
 //data
@@ -33,6 +34,7 @@ const Technology = () => {
 
     return (
         <div className="technologyContainer">
+            <PageTitle number={'03'} text={'space launch 101'} techPageTitle={true} />
             {technology && technology.map((tech, i) => {
                 if (window.innerWidth < 900) {
                     return <TechnologyComponent key={tech.name} title={tech.name} text={tech.description} image={tech.images.landscape} setActiveTech={setActiveTech} launchVehicleActive={launchVehicleActive} spacePortActive={spacePortActive} spaceCapsuleActive={spaceCapsuleActive} activeIndex={activeIndex} setActiveIndex={setActiveIndex} index={i} />

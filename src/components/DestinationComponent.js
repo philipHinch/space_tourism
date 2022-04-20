@@ -5,7 +5,7 @@ import PageTitle from './PageTitle';
 const DestinationComponent = ({ image, title, text, distance, time, setActiveDestination, moonActive, marsActive, europaActive, titanActive, index, activeIndex, setActiveIndex }) => {
     return (
         <div id={index} className={`destinationComponentContainer ${ activeIndex === index ? 'active' : '' }`}>
-            <PageTitle number={'01'} text={'pick your destination'} />
+            {/* <PageTitle number={'01'} text={'pick your destination'} /> */}
             <div className="destinationComponentContainerLeft">
                 <img src={`${ image }`} alt={`${ title } image`} />
             </div>

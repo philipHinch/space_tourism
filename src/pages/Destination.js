@@ -1,5 +1,6 @@
 //components
 import DestinationComponent from "../components/DestinationComponent";
+import PageTitle from "../components/PageTitle";
 //hooks
 import { useState } from "react";
 //data
@@ -37,6 +38,7 @@ const Destination = () => {
 
     return (
         <div className="destinationContainer">
+            <PageTitle number={'01'} text={'pick your destination'} />
             {destinations && destinations.map((dest, i) => (
                 <DestinationComponent key={dest.name} image={dest.images.webp} title={dest.name} text={dest.description} distance={dest.distance} time={dest.travel} moonActive={moonActive} marsActive={marsActive} europaActive={europaActive} titanActive={titanActive} setActiveDestination={setActiveDestination} index={i} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
             ))}

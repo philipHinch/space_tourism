@@ -202,7 +202,7 @@ ul{
 .destinationComponentContainer{
     position: relative;
     display: flex;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     align-items: center;
     /* border: 1px solid salmon; */
     width: 80%;
@@ -338,13 +338,13 @@ flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s ease;
+    
 }
 /* CREW COMPONENT */
 .crewComponentContainer{
     /* border: 1px solid salmon; */
     position: relative;
     display: flex;
-    margin-top: 100px;
     align-items: center;
     /* border: 1px solid salmon; */
     width: 80%;
@@ -509,14 +509,19 @@ flex-direction: column;
 /* PAGE TITLE */
 .pageTitleContainer{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 180px;
+    left: 50px;
     display: flex;
-    justify-content: flex-start;
+    /* display: block; */
     text-transform: uppercase;
     font-size: 1.8rem;
     font-family: var(--barlow-condensed);
     letter-spacing: 4.7px;
+    margin-right: auto;
+    padding-left: 50px;
+    min-height: 0px;
+    z-index: 2;
+    /* margin-top: 380px; */
 }
 .pageTitleContainer .pageNumber{
     font-weight: bold;
@@ -585,15 +590,19 @@ flex-direction: column;
 /* ------ */
 @media (max-width:1100px){
 /* home */
+.homeContainer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
 .homeMain{
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 100%;
-    margin-top: 0;
+    margin-top: 100px;
 }
 .homeMainLeft h2{
-   
     margin-left: 0px;
 }
 .homeMainLeft p{
@@ -614,20 +623,22 @@ flex-direction: column;
 /* crew */
 .crewComponentContainer{
     flex-direction: column;
-    margin-top: 0px;
-    /* margin-top: 100px; */
-height: 100%;
+    display: block;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    /* height: 100%; */
     padding: 0;
+    margin-top: 500px;
+    overflow: scroll;
 }
 .crewComponentContainerRight{
-    padding-top: 70px;
+    padding-top: 40px;
+    margin-top: auto !important;
 }
 .crewComponentContainerRight img{
-    min-width: 250px;
+    min-width: 150px;
+    max-width: 500px;
 }
 .crewComponentContainerLeft{
     text-align: center;
@@ -636,6 +647,7 @@ height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    min-height: 0;
 }
 .crewTitle{
     font-size: 3rem;
@@ -645,11 +657,6 @@ height: 100%;
     margin: 0 auto;
     width: 70%;
 }
-/* page title */
-.crewPageTitle{
-    top: 150px;
-    /* left: 40px; */
-}
 /* swiper */
 .swiper-pagination{
     display: block !important;
@@ -657,7 +664,7 @@ height: 100%;
     align-items: center;
     justify-content: center;
     width: 100% !important;
-    bottom: 47% !important;
+    bottom: 42% !important;
 }
 .swiper-pagination-bullet{
     height: 12px !important;
@@ -666,22 +673,25 @@ height: 100%;
 }
 }
 @media (max-width:900px){
-/* page title */
+    /* page title */
 .pageTitleContainer{
-    margin-top: 25px;
-    font-size: 1.6rem;
+    left: 10px;
 }
-/* destination select */
+    /* destination select */
 .destinationSelectContainer{
     justify-content: center;
     margin-top: 25px ;
     margin-bottom: 50px;
 }
-/* destination */
+    /* destination */
+    .destinationContainer{
+        height: 100%;
+    }
 .destinationComponentContainer{
     flex-direction: column;
+    height: 100vh;
+    margin-top: 200px;
 }
-
 .destinationComponentContainerLeft img{
     max-width: 300px;
 }
@@ -694,7 +704,10 @@ height: 100%;
 .destinationText,.destinationLine{
     max-width: 100%;
 }
-/* technology */
+    /* technology */
+.technologyContainer{
+    height: 100%;
+}
 .technologyComponentContainer{
     flex-direction: column;
     width: 100%;
@@ -702,7 +715,7 @@ height: 100%;
     justify-content: center;
     text-align: center;
 }
-.technologyComponentContainer :nth-child(4) { 
+.technologyComponentContainer :nth-child(3) { 
     order: -1; 
 }
 .technologyComponentLeft{
@@ -724,16 +737,16 @@ height: 100%;
 .technologyComponentRight img{
     object-fit: cover;
 }
-/* technology select */
+    /* technology select */
 .technologySelectContainer{
     display: flex;
-   margin: 40px 0;
+    margin: 40px 0;
+}
+.technologySelectContainer :nth-child(3) { 
+    order: 1; 
 }
 .selectCircle{
     margin-right: 20px;
 }
-/* tech page title */
-.techPageTitle{
-    margin-left: 80px;
-}
+
 }
