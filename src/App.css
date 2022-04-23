@@ -853,11 +853,15 @@ flex-direction: column;
 @media (max-width:600px){
     /* home */
     .homeMainLeft h2{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin: 0;
     }
     .homeMainLeft h1{
-        font-size: 6rem;
+        font-size: 5rem;
+        margin: 10px 0;
+    }
+    .homeMainLeft p{
+        width: 90%;
     }
 }
 @media (max-width:500px){
