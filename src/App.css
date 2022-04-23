@@ -232,8 +232,6 @@ display: none;
     max-width: 550px;
     min-width: 300px;
     animation: fadeIn 1.5s ease;
-    
-
 }
 .destinationComponentContainerRight{
 flex: 1;
@@ -274,8 +272,6 @@ flex-direction: column;
     /* opacity: 0.1; */
     animation: fadeIn 0.2s ease;
     max-width: 80%;
-
-
 }
 .destinationInfoContainer{
     display: flex;
@@ -486,7 +482,7 @@ flex-direction: column;
     max-width: 600px;
 }
 .technologyComponentRight img{
-    width: 100%;
+    width: 101%;
     height: 100%;
 }
 /* TECHNOLOGY SELECT */
@@ -757,6 +753,7 @@ flex-direction: column;
     max-width: none;
 }
 .technologyComponentRight img{
+    
     object-fit: cover;
 }
     /* technology select */
@@ -772,7 +769,7 @@ flex-direction: column;
 }
 }
 @media (max-width:768px){
-    /* navbar */
+    /* sliding menu */
     .navbarRight{
         display: none;
     }
@@ -844,29 +841,17 @@ flex-direction: column;
     }
 }
 @media (max-width:700px){
+    /* home */
     .homeMain{
         width: 100%;
     }
-    /* .homeMain{
-        width: 100%;
-    }
-    .homeMainLeft h2{
-        font-size: 1.4rem;
-        margin: 0;
-    }
-    .homeMainLeft h1{
-        font-size: 6rem;
-    }
-    .homeMainLeft p{
-        margin: auto;
-        
-    } */
     .innerLeftContainer{
         width:100%;
     }
 
 }
 @media (max-width:600px){
+    /* home */
     .homeMainLeft h2{
         font-size: 1.4rem;
         margin: 0;
@@ -875,16 +860,82 @@ flex-direction: column;
         font-size: 6rem;
     }
 }
-@media (max-width:400px){
-    /* .homeMainLeft h2{
-        font-size: 1.2rem;
-        margin: 0;
+@media (max-width:500px){
+    /* destination */
+    .destinationComponentContainer{
+        width: 90%;
     }
-    .homeMainLeft h1{
-        font-size: 5rem;
-    } */
+    .destinationComponentContainerLeft{
+        min-width: 200px ;
+        max-width: 200px;
+        width: 100px;
+    }
+    .destinationComponentContainerLeft img{
+        max-width: none ;
+        min-width: 200px;  
+        width: 100%;
+    }
+    .innerRightDestinationComponent{
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+    .destinationTitle{
+        font-size: 4rem;
+        margin: 40px 0;
+        max-width: 100%;
+    }
+    .destinationText{
+        max-width: 100%;
+    }
+    .destinationLine{
+        max-width: 100%;
+    }
+    .destinationInfoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .destinationDistanceContainer{
+        margin-bottom: 40px;
+    }
+    .destinationDistanceText, .destinationTravelTimeText{
+        margin-bottom: 10px;
+    }
+    /* destination select */
+    .destinationSelectContainer .destination{
+        margin: auto;
+    }
+    /* page title */
+    .pageTitleContainer{
+        font-size: 1.2rem;
+        left: 0;
+        padding-left: 20px;
+    }
+    .pageTitleContainer .pageNumber{
+        margin-right: 20px;
+    }
+    /* technology select */
+    .selectCircle{
+        height: 60px;
+    width: 60px;
+    font-size: 1.4rem;
+    }
+    /* technology */
+    .technologyTitle{
+        font-size: 2.4rem;
+    }
+    .technologyText{
+        max-width: 90%;
+    }
+}
+@media (max-width:400px){
     /* sliding menu */
     .slidingMenuContainer{
         width: 100%;
     }
+     /* technology */
+     .technologyTitle{
+        font-size: 2.2rem;
+    }
+   
 }
