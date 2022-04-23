@@ -18,7 +18,7 @@ function App() {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <div className="App">
+    <div className="App" >
       <BrowserRouter>
         <Navbar setShowMenu={setShowMenu} />
         <SlidingMenu showMenu={showMenu} setShowMenu={setShowMenu} />

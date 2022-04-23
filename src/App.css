@@ -100,6 +100,12 @@ ul{
     
 }
 /* ------ */
+/* SLIDING MENU */
+/* ------ */
+.slidingMenuContainer{
+    display: none;
+}
+/* ------ */
 /* HOME */
 /* ------ */
 .homeContainer{
@@ -145,7 +151,6 @@ ul{
     width: 80%;
     margin-left: 10px;
     line-height: 30px;
-
 }
 .homeMainRight{
     flex:1 ;
@@ -790,6 +795,7 @@ flex-direction: column;
         width: 100%;
     }
     .slidingMenuContainer{
+        display: block;
         position: fixed;
         height: 100vh;
         width: 70%;
@@ -810,6 +816,7 @@ flex-direction: column;
         right: 40px;
         height: 33px;
         width: 33px;
+        cursor: pointer;
     }
     .closeIconContainer img{
         width: 100%;
@@ -834,5 +841,50 @@ flex-direction: column;
     .slidingMenuNumber{
         margin-right: 12px;
         font-weight: bold;
+    }
+}
+@media (max-width:700px){
+    .homeMain{
+        width: 100%;
+    }
+    /* .homeMain{
+        width: 100%;
+    }
+    .homeMainLeft h2{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .homeMainLeft h1{
+        font-size: 6rem;
+    }
+    .homeMainLeft p{
+        margin: auto;
+        
+    } */
+    .innerLeftContainer{
+        width:100%;
+    }
+
+}
+@media (max-width:600px){
+    .homeMainLeft h2{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .homeMainLeft h1{
+        font-size: 6rem;
+    }
+}
+@media (max-width:400px){
+    /* .homeMainLeft h2{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .homeMainLeft h1{
+        font-size: 5rem;
+    } */
+    /* sliding menu */
+    .slidingMenuContainer{
+        width: 100%;
     }
 }
