@@ -1,7 +1,5 @@
 # Space tourism multi-page website 
 
-### Work in progress...
-
 This is a frontend mentor challenge in which the goal is to build out a multi-page space tourism website and get it looking as close to the original design as possible.
 
 In the **destination**, **crew** and **technology** pages I used map (a high order javascript function) and the index from the map method in order to compare it to the active state to show content conditionally by adding an active class.
@@ -11,8 +9,8 @@ In the **destination**, **crew** and **technology** pages I used map (a high ord
 ## Technologies used:
 
 - React
-- React hooks
-- React router V6
+- React Hooks
+- React Router V6
 - CSS Animations
 
 Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/space-tourism-multipage-website-5fdJLy3dt) challange.
