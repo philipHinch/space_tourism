@@ -899,6 +899,7 @@ flex-direction: column;
     .destinationInfoContainer{
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
     }
     .destinationDistanceContainer{
         margin-bottom: 40px;
