@@ -229,7 +229,7 @@ display: none;
 }
 .destinationComponentContainerLeft img{
     width: 100%;
-    max-width: 550px;
+    max-width: 400px;
     min-width: 300px;
     animation: fadeIn 1.5s ease;
 }
@@ -428,6 +428,7 @@ flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s ease;
+    overflow-x: hidden;
 }
 .technologyComponentContainer{
     position: relative;
