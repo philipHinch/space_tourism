@@ -15,9 +15,20 @@ In the **destination**, **crew** and **technology** pages I used map (a high ord
 
 Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) challange.
 
-![home preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png)
+![home dektop preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png)
 
 ---
 
-![destination preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/destination-desktop-preview.png)
+![destination desktop preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/destination-desktop-preview.png)
+
+---
+
+![technology tablet preview](https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/technology-tablet-preview.jpg?raw=true)
+
+---
+
+![crew mobile preview](https://github.com/philipHinch/space_tourism/blob/main/src/assets/previews/crew-mobile-preview.jpg?raw=true)
+
+
+
 
