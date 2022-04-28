@@ -13,7 +13,7 @@ In the **destination**, **crew** and **technology** pages I used map (a high ord
 - React Router V6
 - CSS Animations
 
-Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/space-tourism-multipage-website-5fdJLy3dt) challange.
+Check out the [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) challange.
 
 ![home preview](https://raw.githubusercontent.com/philipHinch/space_tourism/main/src/assets/previews/home-desktop-preview.png)
 
